@@ -1,0 +1,6 @@
+../Core/Src/sio.c:14:10:sio_open	24	static
+../Core/Src/sio.c:31:6:sio_send	24	static
+../Core/Src/sio.c:53:6:startUART	8	static
+../Core/Src/sio.c:57:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/sio.c:84:7:sio_read	32	static
+../Core/Src/sio.c:124:7:sio_tryread	32	static
