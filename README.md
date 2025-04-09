@@ -3,7 +3,12 @@ UDP, TCP and HTTP WebServer.
 Working on STM32H743ZI2 Board directly from ST-Link Connector.
 
 Can work on Linux with commands below:
-?
+sudo slattach -s 115200 -p slip /dev/ttyACM0 &
+sudo ifconfig sl0 192.168.1.2 pointopoint 192.168.1.144 up
+ping 192.168.1.144
+echo "Hello, UDP over SLIP!" | nc -u 192.168.1.144 7
+echo "Hello, TCP over SLIP!" | nc 192.168.1.144 8
+Directly go to 192.168.1.144 via browser
 
 Change Notes:
 STM32 CubeMX Code Generator can remove some codes.
